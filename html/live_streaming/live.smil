@@ -1,0 +1,12 @@
+<smil>
+<head>
+<meta base='rtmp://localhost:1935/liveStreaming/'/>
+</head>
+<body>
+<switch>
+<video src='high' system-bitrate='2000000' height='2000'/>
+<video src='medium' system-bitrate='800000' height='800'/>
+<video src='low' system-bitrate='100000' height='600'/>
+</switch>
+</body>
+</smil>

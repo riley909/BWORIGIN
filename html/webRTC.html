@@ -1,0 +1,42 @@
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Streaming</title>
+    <link rel="stylesheet" href="webRTC/main.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+	<h1>Live Streaming</h1>
+		<!-- <img src="./14862762537_82af9ffbe2_o-min.jpg" style="width: 500px; height:auto;"/> -->
+		<div class="container-fluid">
+			<div class="row m-2">
+				<div class="col-5">
+					<video id="localVideo" autoplay playsinline controls></video>
+				</div>
+				<div class="col-5">
+					<video id="remoteVideo" autoplay playsinline controls></video>
+				</div>
+				<div class="col-2">
+					<textarea rows="20" cols="30" id="chatRoom"></textarea><br>
+					<input type="text" id="name" readonly>
+					<input type="text" id="chatInput">
+					<input type="button" value="보내기" onclick="sendMsg()">
+				</div>
+			</div>
+			<div class="ml-4">
+				<button id="startButton">Start</button>
+				<button id="callButton">Call</button>
+				<button id="hangupButton">Hang Up</button>
+			</div>
+		</div>
+
+		<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+		<script src="webRTC/main.js"></script>
+		<script src="webRTC/chat.js"></script>
+    </body>
+</html>
