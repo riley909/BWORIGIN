@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8">
+    <title>아이디 찾기</title>
+    <link rel="stylesheet" href="/stdbhs/bootstrap-4.4.1-dist/css/bootstrap.css">
+  </head>
+  <body>
+    <form action="/stdbhs/templ/findID.php" method="post">
+
+
+    <div class="container" style="position:relative; top:30px;">
+        <div class="row justify-content-center">
+          <div class="col-md-5">
+            <div class="card-group mb-0">
+              <div class="card p-4">
+                <div class="card-body">
+                  <h1>아이디 찾기</h1>
+
+                  <p class="text-muted">이메일 아이디의 일부를 확인할 수 있습니다.</p>
+
+                  <div class="form-group mb-4">
+                    <span class="input-group-addon"></span>
+                    <label>이름</label>
+                    <input type="text" name="name" class="form-control" placeholder="가입시 기입한 실명을 입력하세요.">
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <span class="input-group-addon"></span>
+                    <label>보안 질문</label>
+                    <select class="form-control" name="idQuestion" id="idQuestion" style="margin-bottom:20px;">
+                      <option value="나의 고향은?">나의 고향은?</option>
+                      <option value="어머니의 성함은?">어머니의 성함은?</option>
+                      <option value="아버지의 성함은?">아버지의 성함은?</option>
+                      <option value="나의 보물 1호는?">나의 보물 1호는?</option>
+                      <option value="나의 반려동물의 이름은?">나의 반려동물의 이름은?</option>
+                      <option value="내가 처음으로 가봤던 해외 여행지는?">내가 처음으로 가봤던 해외 여행지는?</option>
+                      <option value="가장 기억에 남는 선생님의 성함은?">가장 기억에 남는 선생님의 성함은?</option>
+                    </select>
+                    <input type="text" name="idAnswer" class="form-control" placeholder="답변 작성">
+                  </div>
+
+                  <div class="row">
+                    <div class="col-6">
+                      <input type="submit" class="btn btn-primary px-4" value="아이디 찾기">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</form>
+
+  </body>
+</html>
