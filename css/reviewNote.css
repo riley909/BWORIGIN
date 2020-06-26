@@ -1,0 +1,67 @@
+body {
+    background: #eee
+}
+
+.icon-container {
+    border-radius: 7px
+}
+
+.stars i {
+    margin-right: 2px;
+    color: rgb(255, 196, 0);
+    font-size: 13px
+}
+
+.rating-number {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 2px
+}
+
+.number-ratings {
+    font-size: 12px
+}
+
+.listing-title {
+    margin-bottom: -7px
+}
+
+.ellipsis {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ellipsis-multi {
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    line-height: 1.2;
+    height: 3.6em;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.progress-bar {
+    background: #3F84FC
+}
+
+.progress {
+    height: 16px
+}
+
+.tags span {
+    margin-right: 9px;
+    border: 1px solid #86b2ff;
+    padding-right: 9px;
+    padding-left: 9px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    border-radius: 7px;
+    background-color: #86b2ff;
+    color: #fff
+}
